@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "464438991612",
+    "project_id": "quizapp-f48e2",
+    "storage_bucket": "quizapp-f48e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464438991612:android:f149cb135f703b2c461579",
+        "android_client_info": {
+          "package_name": "com.arquitectura.triviapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrZQTdiVqsM7eMsn2wpQ7I0PSzTEFOfqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464438991612:android:d83f55708f03d874461579",
+        "android_client_info": {
+          "package_name": "com.example.quiztrivia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrZQTdiVqsM7eMsn2wpQ7I0PSzTEFOfqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
