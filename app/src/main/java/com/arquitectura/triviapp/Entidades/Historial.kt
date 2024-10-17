@@ -3,7 +3,7 @@ package com.arquitectura.triviapp.Entidades
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "tabla_historial")
+@Entity(tableName = "historial")
 data class Historial(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = 0,
