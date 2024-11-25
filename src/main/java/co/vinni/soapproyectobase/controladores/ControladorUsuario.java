@@ -13,7 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
-
+///
 @Log4j2
 @RestController
 @RequestMapping("/Trivia/usuarios")

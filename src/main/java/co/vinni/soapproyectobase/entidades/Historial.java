@@ -13,7 +13,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "HISTORIAL")
-
+///
 public class Historial {
 
     @Id

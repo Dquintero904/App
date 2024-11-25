@@ -18,7 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "USUARIO")
-
+////
 public class Usuario implements Serializable {
 
     @Id
