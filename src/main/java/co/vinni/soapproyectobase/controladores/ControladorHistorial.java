@@ -30,7 +30,7 @@ public class ControladorHistorial {
         List<HistorialDTO> historialUsuario = servicioHistorial.obtenerHistorialPorUsuario(username);
         return ResponseEntity.ok(historialUsuario);
     }
-
+// get
     @GetMapping("/usuario/{username}/puntos-totales")
     public ResponseEntity<Integer> obtenerTotalPuntosPorUsuario(@PathVariable String username) {
         Integer totalPuntos = servicioHistorial.obtenerTotalPuntosPorUsuario(username);
