@@ -404,14 +404,7 @@ public class ServicioPregunta implements Serializable {
     public List<PreguntaDTO> getTodasLasPreguntas(String categoria , String dificultad) {
         List<Pregunta> preguntas = repositorioPregunta.findByCategoriaAndDificultadAndEstado(categoria , dificultad , true);
 
-
-        Collections.shuffle(preguntas);
-
-
-        List<Pregunta> preguntasAleatorias = preguntas.subList(0, Math.min(10, preguntas.size()));
-
-
-        return preguntasAleatorias.stream()
+        return preguntas.stream()
                 .map(pregunta -> modelMapper.map(pregunta, PreguntaDTO.class))
                 .collect(Collectors.toList());
     }
