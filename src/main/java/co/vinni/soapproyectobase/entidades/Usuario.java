@@ -21,6 +21,7 @@ import java.util.List;
 ////
 public class Usuario implements Serializable {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
@@ -30,17 +31,43 @@ public class Usuario implements Serializable {
     @Column(name = "USERNAME" , unique = true)
     private String username;
 
+
     @Column(name = "PASSWORD")
     private String password;
+
 
     @Column(name = "EMAIL")
     private String email;
 
-    @Column(name = "LOGRO")
-    private String logro;
+
+    @Column(name = "NIVEL")
+    private String nivel;
+
+
+    @Column(name = "LOGRO1")
+    private String logro1;
+
+
+    @Column(name = "LOGRO2")
+    private String logro2;
+
+
+    @Column(name = "LOGRO3")
+    private String logro3;
+
+
+    @Column(name = "LOGRO4")
+    private String logro4;
+
+
+    @Column(name = "LOGRO5")
+    private String logro5;
+
 
     @OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Historial> historiales = new ArrayList<>();
 
+
 }
+
 

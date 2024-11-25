@@ -15,6 +15,7 @@ import java.io.Serializable;
 
 public class PreguntaDTO implements Serializable {
 
+
     private Long id_pregunta;
     private String pregunta;
     private String op1;
@@ -24,6 +25,8 @@ public class PreguntaDTO implements Serializable {
     private String respuesta;
     private String categoria;
     private String dificultad;
+    private boolean estado;
+
 
 
 }

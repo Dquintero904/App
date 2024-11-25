@@ -18,8 +18,21 @@ public interface RepositorioHistorial extends JpaRepository<Historial, Long> , J
     @Query("SELECT h FROM Historial h WHERE h.usuario.username = :username ORDER BY h.tiempo DESC")
     List<Historial> getDatosDelUsuario(@Param("username") String username);
 
+
     @Query("SELECT SUM(h.puntaje) FROM Historial h WHERE h.usuario.username = :username")
     Integer getTotalPuntosDelUsuario(@Param("username") String username);
+
+
+    @Query("SELECT SUM(h.ayudas) FROM Historial h WHERE h.usuario.username = :username")
+    Integer getTotalAyudasDelUsuario(@Param("username") String username);
+
+
+    @Query("SELECT SUM(h.tiempo) FROM Historial h WHERE h.usuario.username = :username")
+    Integer getTiempoTotalDelUsuario(@Param("username") String username);
+
+
+    @Query("SELECT h.pregunta.dificultad, h.pregunta.categoria FROM Historial h WHERE h.usuario.username = :username")
+    List<Object[]> getDificultadYCategoriaPorUsuario(@Param("username") String username);
 
 }
 
